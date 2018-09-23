@@ -3,64 +3,71 @@ package server;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+
 
 @Service
 public class ChatService {
 
-    private static Long defaultLimit = 0L;
+    private static Long defaultLimit = 10L;
 
     @Autowired
     private MessageRepository messageRepository;
 
     public List<Message> getAllMessagesByUserNameFromStartIdTillLimit(String userName, Long startId, Long limit){
-        if(limit <=0 )
+        if(limit <0 )
             limit = defaultLimit;
         return (List<Message>)messageRepository.findTopNUserNameOrderByMessageIdDescTillLimit(userName,startId,limit.intValue());
     }
 
 
     public long addMessage(Message message){
-        defaultLimit =  messageRepository.save(message).getMessageId();
-        return defaultLimit;
+        return  messageRepository.save(message).getMessageId();
     }
 
-    public String deleteMessageById(long messageId){
+    public ResponseEntity<String> deleteMessageById(long messageId){
         Message deleteMessage = messageRepository.findByMessageId(messageId);
         try{
             if(deleteMessage != null) {
                 messageRepository.deleteById(deleteMessage.getMessageId());
-                return String.format("message deleted with id %d", messageId);
+                return ResponseEntity.ok(String.format("message deleted with id %d", messageId));
             }
-            return String.format("no message with id %d exists in the message logs", messageId);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                    String.format("no message with id %d exists in the message logs", messageId));
         }
         catch (NullPointerException npe){
-            return "no message with such Id exists";
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                    String.format("no message with id %d exists in the message logs", messageId));
         }
     }
 
-    public String deleteMessageForUserById(String userName, Long messageId){
+    public ResponseEntity<String> deleteMessageForUserById(String userName, Long messageId){
         List<Message> messagesForUser = messageRepository.findAllByUserName(userName);
         for(Message msg : messagesForUser){
             if(msg.getMessageId() == messageId){
                 return deleteMessageById(messageId);
             }
         }
-        return String.format("No message with id %d exists for user %s", messageId, userName);
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                String.format("No message with id %d exists for user %s", messageId, userName));
     }
 
-    public String deleteMessageByUser(String userName){
+    public ResponseEntity<String> deleteMessageByUser(String userName){
         List<Message> messagesToBeDeleted = messageRepository.findAllByUserName(userName);
         try{
             if(messagesToBeDeleted.size() != 0){
                 for(Message message : messagesToBeDeleted)
                     messageRepository.deleteById(message.getMessageId());
-                return String.format("all messages for user %s are deleted", userName);
+                return ResponseEntity.ok(String.format("all messages for user %s are deleted", userName));
             }
             else
-                return String.format("there is no message for the user %s", userName);
+                return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                        String.format("there is no message for the user %s", userName));
         }
         catch (NullPointerException npe){
-            return String.format("there is no message for the user %s", userName);
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(
+                    String.format("there is no message for the user %s", userName));
         }
     }
 }
