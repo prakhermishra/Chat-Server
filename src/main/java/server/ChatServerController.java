@@ -43,11 +43,4 @@ public class ChatServerController {
                                   @PathVariable("messageId") Long messageId){
         return chatService.deleteMessageForUserById(userName, messageId);
     }
-
-    @RequestMapping(method = RequestMethod.GET, path="/test")
-    public ResponseEntity<List<Message>> getMessage(){
-        return ResponseEntity.ok(chatService.getAllMessagesByUserNameFromStartIdTillLimit("prakkk",0L,10L));
-    }
-
-
 }
