@@ -27,7 +27,7 @@ Deletes all the chatlogs for a given user.
 ● DELETE /chatlogs/<user>/<msgid>
 ○ Delete just the given chatlog for a given user.  Returns an appropriate HTTP error response if the msgid is not found.
 
-==========================================================================================================================
+===============================================================================================
 
 Steps to setup :
 1.Clone the project.
