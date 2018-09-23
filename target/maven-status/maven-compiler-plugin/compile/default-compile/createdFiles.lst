@@ -1,0 +1,5 @@
+server/ChatServerApp.class
+server/ChatService.class
+server/ChatServerController.class
+server/MessageRepository.class
+server/Message.class
