@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a75a97c-79dc-495b-af8e-e860257a08c5" name="Default" comment="" />
+    <list default="true" id="9a75a97c-79dc-495b-af8e-e860257a08c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/ChatService.java" afterPath="$PROJECT_DIR$/src/main/java/server/ChatService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/server/MessageRepository.java" afterPath="$PROJECT_DIR$/src/main/java/server/MessageRepository.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,10 +22,9 @@
       <file leaf-file-name="ChatService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="17" column="93" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="93" />
               <folding>
-                <element signature="method#getAllMessagesByUserNameFromStartIdTillLimit#0;class#ChatService#0" expanded="false" />
                 <element signature="method#addMessage#0;class#ChatService#0" expanded="false" />
                 <element signature="method#deleteMessageById#0;class#ChatService#0" expanded="false" />
                 <element signature="method#deleteMessageForUserById#0;class#ChatService#0" expanded="false" />
@@ -52,24 +56,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageRepository.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MessageRepository.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="19" column="100" lean-forward="false" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
+            <state relative-caret-position="272">
+              <caret line="20" column="108" lean-forward="true" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1537706978462" expanded="true" signature="646:718" ph="SELECT * FRO... message" />
+                <marker date="1537710295815" expanded="true" signature="646:744" ph="SELECT * FRO... message" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChatServerController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChatServerController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatServerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+            <state relative-caret-position="400">
+              <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,6 +82,9 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -89,10 +96,10 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/server/MessageRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/ChatServerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/server/ChatService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/server/MessageRepository.java" />
       </list>
     </option>
   </component>
@@ -115,6 +122,7 @@
     <option name="width" value="1301" />
     <option name="height" value="772" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -587,12 +595,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537679553899</updated>
-      <workItem from="1537679559778" duration="20326000" />
+      <workItem from="1537679559778" duration="21755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20326000" />
+    <option name="totallyTimeSpent" value="21755000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
@@ -614,9 +622,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6095679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19195047" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -672,20 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="method#getAllMessagesByUserNameFromStartIdTillLimit#0;class#ChatService#0" expanded="false" />
-            <element signature="method#addMessage#0;class#ChatService#0" expanded="false" />
-            <element signature="method#deleteMessageById#0;class#ChatService#0" expanded="false" />
-            <element signature="method#deleteMessageForUserById#0;class#ChatService#0" expanded="false" />
-            <element signature="method#deleteMessageByUser#0;class#ChatService#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatServerApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -704,23 +698,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatServerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="19" column="100" lean-forward="false" selection-start-line="19" selection-start-column="100" selection-end-line="19" selection-end-column="100" />
+        <state relative-caret-position="400">
+          <caret line="29" column="62" lean-forward="true" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1537706978462" expanded="true" signature="646:718" ph="SELECT * FRO... message" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatServerController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/ChatService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="300">
+          <caret line="17" column="93" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="93" />
+          <folding>
+            <element signature="method#addMessage#0;class#ChatService#0" expanded="false" />
+            <element signature="method#deleteMessageById#0;class#ChatService#0" expanded="false" />
+            <element signature="method#deleteMessageForUserById#0;class#ChatService#0" expanded="false" />
+            <element signature="method#deleteMessageByUser#0;class#ChatService#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/server/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="108" lean-forward="true" selection-start-line="20" selection-start-column="108" selection-end-line="20" selection-end-column="108" />
           <folding>
             <element signature="imports" expanded="true" />
+            <marker date="1537710295815" expanded="true" signature="646:744" ph="SELECT * FRO... message" />
           </folding>
         </state>
       </provider>

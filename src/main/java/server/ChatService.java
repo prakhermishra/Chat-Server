@@ -15,7 +15,7 @@ public class ChatService {
     public List<Message> getAllMessagesByUserNameFromStartIdTillLimit(String userName, Long startId, Long limit){
         if(limit <=0 )
             limit = defaultLimit;
-        return (List<Message>)messageRepository.findTopNUserNameOrderByMessageIdAscTillLimit(userName,startId,limit.intValue());
+        return (List<Message>)messageRepository.findTopNUserNameOrderByMessageIdDescTillLimit(userName,startId,limit.intValue());
     }
 
 
